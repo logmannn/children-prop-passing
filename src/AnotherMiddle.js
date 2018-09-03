@@ -2,15 +2,16 @@ import React, { Component, Fragment } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Bottom from "./Bottom";
-import AnotherMiddle from "./AnotherMiddle";
 
-const Middle = ({ children }) => {
+const AnotherMiddle = ({ props }) => {
+  console.log("anothermiddle ");
+  console.log(props);
   return (
     <div>
-      Middle
-      <AnotherMiddle {...children} />
+      AnotherMiddle
+      <Bottom {...props} />
     </div>
   );
 };
 
-export default Middle;
+export default AnotherMiddle;
